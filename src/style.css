@@ -3,16 +3,17 @@
   /* font */
 
   --f-principal: "Gochi Hand", cursive;
-  --f-ttulos: "Pacifico", cursive;
+  --f-titulos: "Pacifico", cursive;
   --f-parrafos: "Montserrat", sans-serif;
   /*  font-weight */
   --fw-300: 400;
 
   /* colors */
-   --color-movies: #0085C2;
-  --color-people: #541B35;
-  --color-location: #F05231;
-  --color-vehicles: #91C271;
+  --color-light: #f4f4f4;
+  --color-movies: #0085c2;
+  --color-people: #541b35;
+  --color-location: #f05231;
+  --color-vehicles: #91c271;
 }
 
 * {
@@ -41,7 +42,7 @@ main {
   background: rgba(0, 0, 0, 0.72);
 }
 .container-img {
-   width: 870px;
+  width: 870px;
   height: 343px;
   margin-bottom: 136px;
   display: flex;
@@ -55,12 +56,12 @@ main {
   position: relative;
 }
 
-.cont-categories {  
+.cont-categories {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-left: 20%;
-}  
+}
 
 #movies,
 #people,
@@ -68,17 +69,17 @@ main {
 #vehicles {
   width: 100%;
   height: 15%;
-   margin: 30px 0;
+  margin: 30px 0;
   padding: 15px 0px 15px 50px;
   border: none;
   border-radius: 35px 0 0 35px;
-  color: white;
+  color: var(--color-light);
   font-family: var(--f-parrafos);
   font-size: 3.6rem;
   cursor: pointer;
 }
 
-.bar{
+.bar {
   width: 400px;
   height: 16px;
 }
@@ -93,4 +94,40 @@ main {
 }
 #vehicles > .bar {
   background-color: var(--color-vehicles);
+}
+.title {
+  height: 400px;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title > img {
+  width: 441px;
+  height: 196px;
+}
+h1 {
+  font-family: var(--f-titulos);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.filters {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: papayawhip;
+}
+
+.search-bar {
+  width: 300px;
+}
+#search,#filter {
+  width: 100%;
+  height: 55px;
+  border-radius: 20px;
+  border: none;
+  padding: 20px;
 }
